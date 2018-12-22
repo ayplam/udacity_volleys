@@ -4,7 +4,7 @@ For this project, a "Tennis" environment is used. In this environment, two agent
 
 The state space consists of 8 x 3 variables that correspond to how the agent sees the ball. Each action is a vector with 2 numbers, corresponding to moving forward or up (jumping) respectively. All actions should be clipped between [-1,1]. 
 
-![Tennis](./imgs/tennis)
+![Tennis](./imgs/tennis.png)
 
 
 ### Getting Started
