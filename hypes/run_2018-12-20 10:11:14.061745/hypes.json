@@ -1,0 +1,28 @@
+{
+    "ACTOR": [
+        "Actor(",
+        "  (fc1): Linear(in_features=24, out_features=128, bias=True)",
+        "  (fc2): Linear(in_features=128, out_features=128, bias=True)",
+        "  (fc3): Linear(in_features=128, out_features=2, bias=True)",
+        "  (bn0): BatchNorm1d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)",
+        "  (bn1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)",
+        ")"
+    ],
+    "CRITIC": [
+        "Critic(",
+        "  (fcs1): Linear(in_features=24, out_features=128, bias=True)",
+        "  (fc2): Linear(in_features=130, out_features=128, bias=True)",
+        "  (fc3): Linear(in_features=128, out_features=1, bias=True)",
+        "  (bn): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)",
+        ")"
+    ],
+    "BATCH_SIZE": 128,
+    "BUFFER_SIZE": 1000000.0,
+    "GAMMA": 0.99,
+    "LR_ACTOR": 0.0001,
+    "LR_CRITIC": 0.001,
+    "TAU": 0.01,
+    "eps_decay": 0.98,
+    "network_size": 128,
+    "seed_start": 2
+}
